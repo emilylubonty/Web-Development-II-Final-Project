@@ -1,7 +1,18 @@
+
+
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family: 'Cabin', system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Font Face */
+@font-face {
+	font-family: 'Cabin';
+	src: url('../fonts/Cabin-VariableFont_wdth,wght.woff2') format('woff2-variations');
+	font-weight: 100 900;
+	font-stretch: 75% 100%;
+	font-display: swap;
 }
 
 /* Theme colors */
