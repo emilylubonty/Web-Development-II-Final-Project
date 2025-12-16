@@ -27,7 +27,7 @@ This website shares a curated collection of AI-generated memes inspired by the m
 ## Tech Stack
 
 - **Static Site Generator:** Eleventy (11ty)
-- **Templating:** Nunjucks
+- **Template:** Nunjucks
 - **Styling:** CSS with custom Cabin font
 - **Deployment:** Netlify & Vercel ready
 
@@ -68,7 +68,6 @@ Generates the static site in the output directory.
 - Accessible navigation
 - Syntax highlighting for code blocks
 - Tag-based post organization
-- RSS feed generation
 
 ## License
 
