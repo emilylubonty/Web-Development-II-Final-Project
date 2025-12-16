@@ -1,11 +1,11 @@
 export default {
-	title: "Eleventy Base Blog v9",
-	url: "https://example.com/",
+	title: "House M.D. Memes",
+	url: "https://housemdmemes.com/",
 	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	description: "A collection of AI generated memes based on the TV show House M.D.",
 	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		name: "Emily Lubonty",
+		email: "G00273953@stu.raritanval.edu",
+		url: "https://housemdmemes.com/about-me/"
 	}
 }

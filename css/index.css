@@ -87,6 +87,7 @@ img{
 }
 img[width][height] {
   height: auto;
+	padding-bottom: 20px;
 }
 img[src$=".svg"] {
   width: 100%;

@@ -1,29 +1,21 @@
----js
-const eleventyNavigation = {
-	key: "Home",
-	order: 1
-};
-
-const numberOfLatestPostsToShow = 3;
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+title: House M.D. Memes
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+<h1>House M.D.</h1>
+<p>The purpose of this website is to share AI generated memes based on the tv show House M.D.</p>
+<p>Each meme was created using Google Gemini.</p>
+<p>I have ranked each meme based on how funny I found them and how relevant they are to the show.</p>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+<img src="/images/Gemini_House_Wilson.png" alt="House and Wilson Meme" width="1000" height="750">
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
-{% endif %}
+<img src="/images/Gemini_House_Liver.png" alt="House Liver Meme" width="1000" height="750">
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+<img src="/images/Gemini_Mouse_Bites.png" alt="House Mouse Bites Meme" width="1000" height="750">
+
+<img src="/images/Gemini_Global_Mouse.png" alt="Global Mouse Bites Meme" width="1000" height="750">
+
+<img src="/images/Gemini_House_Chicken.png" alt="House Chicken Meme" width="1000" height="750">
