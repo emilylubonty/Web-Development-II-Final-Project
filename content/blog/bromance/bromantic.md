@@ -3,6 +3,7 @@ title: How Bromantic
 description: This post involves House and Wilson sharing a platonic bromance
 date: 2025-12-17
 tags: aww
+featured: true
 ---
 
 <img src="./Gemini_Bromantic.png" alt="Four panel meme depicting House and Wilson's platonic bromance">
@@ -21,4 +22,4 @@ Wilson finally looks like Wilson!!!
 
 This is my absolute favorite. Hands down. That's all.
 
-### Overall Rating: ❤️/10 
+### Overall Rating: ❤️/10

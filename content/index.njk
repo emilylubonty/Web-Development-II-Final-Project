@@ -14,4 +14,15 @@ eleventyNavigation:
 <p>Ratings are based on a scale of 1 to 10.</p>
 <p> 10 being the highest possible score, 1 being the lowest. </p>
 </div>
+
+{% for post in collections.posts %}
+  {% if post.data.featured %}
+    <div class="featured-post" style="margin-top: 3rem; padding: 2rem; border-left: 4px solid var(--accent-teal); background: rgba(0, 102, 204, 0.05); border-radius: 8px;">
+      <h2 style="margin-top: 0; color: var(--accent-teal);">✨ Featured Post ✨</h2>
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p>{{ post.data.description }}</p>
+      <a href="{{ post.url }}" style="font-weight: bold; color: var(--accent-blue);">Read More →</a>
+    </div>
+  {% endif %}
+{% endfor %}
  
