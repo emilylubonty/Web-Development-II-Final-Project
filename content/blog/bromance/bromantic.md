@@ -10,11 +10,15 @@ tags: aww
 ## Ranking & Review
 
 ### Relevancy:
-Now *this* accurately portrays House and Wilson's friendship. The banter between Wilson, House, and Cuddy fits the thematic writing of the show. Cuddy's response fits her character's personality.
+
+Now _this_ accurately portrays House and Wilson's friendship. The banter between Wilson, House, and Cuddy fits the thematic writing of the show. Cuddy's response fits her character's personality.
+
 ### AI Accuracy:
+
 Wilson finally looks like Wilson!!!
 
 ### Personal Thoughts:
-This is my absolute favorite. Hands down. That's all. 
 
-### Overall Rating: 14/10
+This is my absolute favorite. Hands down. That's all.
+
+### Overall Rating: ❤️/10 
