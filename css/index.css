@@ -48,7 +48,7 @@
 		--accent-teal: #66d9d9;     /* Lighter teal */
 		--accent-orange: #ffaa33;   /* Lighter orange */
 
-		--background-color: #0d1117;
+		--background-color: #0d2d4a;
 		--text-color: var(--color-gray-90);
 		--text-color-link: var(--accent-blue);
 		--text-color-link-active: var(--accent-teal);
@@ -316,5 +316,24 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+
+/* Glassmorphism effect */
+.glass-container {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 12px;
+	padding: 2rem;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+	.glass-container {
+		background: rgba(102, 179, 255, 0.08);
+		border-color: rgba(102, 179, 255, 0.2);
+		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+	}
 }
 
