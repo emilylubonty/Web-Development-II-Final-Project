@@ -1,8 +1,8 @@
 ---
 title: Global Mouse Bites
-description: This is a post on My Blog about agile frameworks.
+description: This post reviews the Global Mouse Bites meme.
 date: 2025-12-17
-tags: House
+tags: Needs more mouse bites
 ---
 
 <img src="./Gemini_Global_Mouse.png" alt="Four panel meme depicting House giving mouse bites to patient as a cure.">
