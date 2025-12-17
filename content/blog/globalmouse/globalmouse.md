@@ -1,7 +1,7 @@
 ---
 title: Global Mouse Bites
 description: This is a post on My Blog about agile frameworks.
-date: 17 December 2025
+date: 2025-12-17
 tags: House
 ---
 
