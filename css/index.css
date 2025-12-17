@@ -14,34 +14,45 @@
 	font-display: swap;
 }
 
-/* Theme colors */
+/* Theme colors - House M.D. Inspired, Colorblind Safe */
 :root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+	/* Grays - clinical neutral palette */
+	--color-gray-20: #f5f5f5;
+	--color-gray-50: #a0a0a0;
+	--color-gray-90: #1a1a1a;
 
-	--background-color: #fff;
+	/* House M.D. accent colors - colorblind safe */
+	--accent-blue: #0066cc;      /* Clinical blue, strong contrast */
+	--accent-teal: #009999;      /* Teal for secondary accents */
+	--accent-orange: #e67e22;    /* Warm accent, safe for colorblind */
+
+	--background-color: #ffffff;
 
 	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link: var(--accent-blue);
+	--text-color-link-active: var(--accent-teal);
+	--text-color-link-visited: #663399;
 
 	--syntax-tab-size: 2;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
+		/* Dark mode grays */
+		--color-gray-20: #2a2a2a;
+		--color-gray-50: #808080;
+		--color-gray-90: #f0f0f0;
 
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		/* Adjusted accent colors for dark mode */
+		--accent-blue: #66b3ff;     /* Lighter blue for dark backgrounds */
+		--accent-teal: #66d9d9;     /* Lighter teal */
+		--accent-orange: #ffaa33;   /* Lighter orange */
 
-		--background-color: #15202b;
+		--background-color: #0d1117;
+		--text-color: var(--color-gray-90);
+		--text-color-link: var(--accent-blue);
+		--text-color-link-active: var(--accent-teal);
+		--text-color-link-visited: #cc99ff;
 	}
 }
 
