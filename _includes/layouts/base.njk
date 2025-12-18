@@ -38,8 +38,7 @@
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
 
-		{#- Add the heading-anchors web component to the JavaScript bundle #}
-		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
+		{# heading anchors removed to hide hash icons next to headings #}
 	</head>
 	<body>
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
@@ -59,9 +58,7 @@
 		</header>
 
 		<main id="main">
-			<heading-anchors>
-				{{ content | safe }}
-			</heading-anchors>
+			{{ content | safe }}
 		</main>
 
 		<footer>
