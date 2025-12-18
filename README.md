@@ -17,18 +17,18 @@ This website shares a curated collection of AI-generated memes inspired by the m
   - `postslist.njk` - Blog post list component
 - **`_data/`** - Data files and configuration
 - **`css/`** - Stylesheets
-  - `index.css` - Main styles with Cabin font
+  - `index.css` - Main styles with Cabin font, House M.D. color scheme, and glassmorphism effects
   - `message-box.css` - Message box styling
   - `prism-diff.css` - Code syntax highlighting
-- **`fonts/`** - Custom fonts (Cabin variable font)
-- **`public/img/`** - Public images
-- **`images/`** - Meme images
+- **`fonts/`** - Custom fonts (Cabin variable font with variable weights and stretches)
+- **`public/`** - Static assets that are copied to output
 
 ## Tech Stack
 
 - **Static Site Generator:** Eleventy (11ty)
-- **Template:** Nunjucks
-- **Styling:** CSS with custom Cabin font
+- **Templating:** Nunjucks
+- **Styling:** CSS with House M.D.-inspired color scheme and glassmorphism effects
+- **Font:** Cabin variable font
 - **Deployment:** Netlify & Vercel ready
 
 ## Getting Started
@@ -63,11 +63,15 @@ Generates the static site in the output directory.
 
 ## Features
 
-- Responsive design
-- Dark mode support
-- Accessible navigation
-- Syntax highlighting for code blocks
-- Tag-based post organization
+- **Responsive design** with mobile-first approach
+- **Dark mode support** with House M.D.-inspired clinical blue theme
+- **Colorblind-safe color palette** (blues, teals, warm accents)
+- **Glassmorphism effects** on home page welcome section
+- **Featured post** section on homepage
+- **Accessible navigation** with proper semantic HTML
+- **Tag-based post organization** for easy browsing
+- **Custom Cabin variable font** for modern typography
+- **WCAG AA compliant** contrast ratios for accessibility
 
 ## License
 
