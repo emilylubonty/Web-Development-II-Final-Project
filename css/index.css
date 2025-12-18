@@ -18,7 +18,7 @@
 /* Font Face */
 @font-face {
 	font-family: 'Cabin';
-	src: url('./fonts/Cabin-VariableFont_wdth,wght.woff2') format('woff2-variations');
+	src: url('/fonts/Cabin-VariableFont_wdth,wght.woff2') format('woff2-variations');
 	font-weight: 100 900;
 	font-stretch: 75% 100%;
 	font-display: swap;
@@ -281,6 +281,7 @@ header {
 /* Nav */
 .nav {
 	display: flex;
+	font-size: var(--font-size-md);
 	gap: .5em 1em;
 	padding: 0;
 	margin: 0;
