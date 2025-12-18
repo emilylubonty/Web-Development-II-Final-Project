@@ -66,12 +66,18 @@ Generates the static site in the output directory.
 - **Responsive design** with mobile-first approach
 - **Dark mode support** with House M.D.-inspired clinical blue theme
 - **Colorblind-safe color palette** (blues, teals, warm accents)
-- **Glassmorphism effects** on home page welcome section
-- **Featured post** section on homepage
+- **Featured post** callout on the homepage
+- **Suggestion box** with styled form inputs/textarea/button
 - **Accessible navigation** with proper semantic HTML
 - **Tag-based post organization** for easy browsing
-- **Custom Cabin variable font** for modern typography
+- **Custom Cabin variable font** (served from `fonts/` via passthrough)
 - **WCAG AA compliant** contrast ratios for accessibility
+
+## Homepage sections
+
+- Welcome glass panel with intro text
+- Featured Post block (pulls the first `featured: true` post)
+- Suggestion box form for visitor ideas
 
 ## License
 
