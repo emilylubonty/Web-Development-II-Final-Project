@@ -424,3 +424,39 @@ header {
 	color: var(--accent-orange-light);
 }
 
+.comment-box input[type="text"] {
+	width: 100%;
+	border: 1px solid var(--color-gray-30);
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.comment-box {
+	display: flex;	
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.comment-box textarea {
+	width: 100%;
+	border: 1px solid var(--color-gray-30);
+	padding: 10px;
+	box-sizing: border-box;
+	resize: vertical;
+	background: var(--background-color);
+	color: var(--text-color);
+}
+
+.comment-box button {
+	margin-top: 0.75rem;
+	background: var(--accent-orange);
+	color: var(--accent-blue-dark);
+	border: 1px solid var(--accent-orange-dark);
+	padding: 12px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.comment-box button:hover {
+	background: var(--accent-orange-dark);
+}

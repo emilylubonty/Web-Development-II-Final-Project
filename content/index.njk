@@ -24,9 +24,17 @@ eleventyNavigation:
   {% endif %}
 {% endfor %}
  
-<div class= "suggestion-box">
-<h2> Contact Me <h2>
-<h3> Name: </h3>
+<div class="suggestion-box">
+  <h2>Suggestion Box</h2>
+  <form class="comment-box">
+    <label for="comment-name">Name</label>
+    <input type="text" id="comment-name" name="name" placeholder="Your name">
 
+    <label for="comment-message">Comments</label>
+    <textarea id="comment-message" name="message" rows="4" placeholder="I too am in this comment section"></textarea>
+	
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 
