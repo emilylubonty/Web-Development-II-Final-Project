@@ -3,12 +3,22 @@
 :root {
 	--font-family: 'Cabin', system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+
+	/* Golden Ratio Font Size System (φ ≈ 1.618) */
+	--font-size-xs: 0.618rem;    /* ~9.89px - extra small */
+	--font-size-sm: 0.854rem;    /* ~13.66px - small */
+	--font-size-base: 1rem;      /* 16px - base */
+	--font-size-md: 1.382rem;    /* ~22.11px - medium */
+	--font-size-lg: 1.618rem;    /* ~25.89px - large */
+	--font-size-xl: 2.236rem;    /* ~35.78px - extra large */
+	--font-size-xxl: 2.618rem;   /* ~41.89px - 2x large */
+	--font-size-xxxl: 4.236rem;  /* ~67.78px - 3x large */
 }
 
 /* Font Face */
 @font-face {
 	font-family: 'Cabin';
-	src: url('../fonts/Cabin-VariableFont_wdth,wght.woff2') format('woff2-variations');
+	src: url('./fonts/Cabin-VariableFont_wdth,wght.woff2') format('woff2-variations');
 	font-weight: 100 900;
 	font-stretch: 75% 100%;
 	font-display: swap;
@@ -17,14 +27,35 @@
 /* Theme colors - House M.D. Inspired, Colorblind Safe */
 :root {
 	/* Grays - clinical neutral palette */
-	--color-gray-20: #f5f5f5;
-	--color-gray-50: #a0a0a0;
-	--color-gray-90: #1a1a1a;
+	--color-gray-5: #fafafa;     /* Almost white */
+	--color-gray-10: #f0f0f0;    /* Very light */
+	--color-gray-20: #f5f5f5;    /* Light */
+	--color-gray-30: #e5e5e5;    /* Light-mid */
+	--color-gray-50: #a0a0a0;    /* Medium */
+	--color-gray-70: #555555;    /* Medium-dark */
+	--color-gray-90: #1a1a1a;    /* Dark */
+	--color-gray-95: #0f0f0f;    /* Very dark */
 
 	/* House M.D. accent colors - colorblind safe */
 	--accent-blue: #0066cc;      /* Clinical blue, strong contrast */
+	--accent-blue-light: #3399ff;
+	--accent-blue-dark: #004499;
+	
 	--accent-teal: #009999;      /* Teal for secondary accents */
+	--accent-teal-light: #33cccc;
+	--accent-teal-dark: #006666;
+	
 	--accent-orange: #e67e22;    /* Warm accent, safe for colorblind */
+	--accent-orange-light: #f39c12;
+	--accent-orange-dark: #d35400;
+	
+	--accent-green: #27ae60;     /* Complementary green, colorblind safe */
+	--accent-green-light: #2ecc71;
+	--accent-green-dark: #1e8449;
+	
+	--accent-purple: #8e44ad;    /* Accent for special states */
+	--accent-purple-light: #a76dd8;
+	--accent-purple-dark: #6c3483;
 
 	--background-color: #ffffff;
 
@@ -136,8 +167,7 @@ a[href]:active {
 	color: var(--text-color-link-active);
 }
 
-main,
-footer {
+main {
 	padding: 1rem;
 }
 main :first-child {
@@ -146,6 +176,13 @@ main :first-child {
 
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+footer {
+	padding: 1rem;
+	border-top: 3px solid var(--color-gray-10) ;
+	font-size: var(--font-size-sm);
+	text-align: center;
 }
 
 #skip-link {
@@ -224,13 +261,23 @@ header {
 }
 .home-link {
 	flex-grow: 1;
-	font-size: 1em; /* 16px /16 */
+	font-size: var(--font-size-md); 
 	font-weight: 700;
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
 }
 
+.home-link:link(:visited) {
+	color: var(--text-color-link);
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
 /* Nav */
 .nav {
 	display: flex;
@@ -273,14 +320,14 @@ header {
 }
 .postlist-date,
 .postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
+	font-size: var(--font-size-sm); 
 	color: var(--color-gray-90);
 }
 .postlist-date {
 	word-spacing: -0.5px;
 }
 .postlist-link {
-	font-size: 1.1875em; /* 19px /16 */
+	font-size: var(--font-size-md); 
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
 	padding-left: .25em;
@@ -320,23 +367,27 @@ header {
 
 /* Glassmorphism effect */
 .glass-container {
-	background: rgba(255, 255, 255, 0.1);
+	background: color-mix(in srgb, var(--background-color) 80%, transparent);
 	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	border: 1px solid color-mix(in srgb, var(--accent-blue) 20%, transparent);
 	border-radius: 12px;
 	padding: 2rem;
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 32px color-mix(in srgb, var(--accent-blue) 10%, transparent);
 	text-align: center;
 	margin: 2rem auto;
 	max-width: 600px;
 }
 
+.glass-container:hover {
+	box-shadow: 0 8px 32px color-mix(in srgb, var(--accent-blue) 37%, transparent);
+}
+
 @media (prefers-color-scheme: dark) {
 	.glass-container {
-		background: rgba(102, 179, 255, 0.08);
-		border-color: rgba(102, 179, 255, 0.2);
-		box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+		background: color-mix(in srgb, var(--accent-blue) 8%, transparent);
+		border-color: color-mix(in srgb, var(--accent-blue) 20%, transparent);
 	}
 }
+
+
 

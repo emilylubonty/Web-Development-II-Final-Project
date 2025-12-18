@@ -7,9 +7,10 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="icon" type="image/png" href="/house_favicon.png">
 
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+		
+		<meta name="generator" content="{{ eleventy.generator }}"> 
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -44,9 +45,9 @@
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+			<a href="/" class="home-link">
+		<img src="/img/house_favicon.png" alt="House M.D. Memes Logo" class="logo" eleventy:ignore></a>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
@@ -66,6 +67,7 @@
 		<footer>
 			<p>
 				<em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em>
+				<p> 2025 Emily Lubonty </p>
 			</p>
 		</footer>
 
