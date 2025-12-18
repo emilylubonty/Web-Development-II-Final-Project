@@ -1,7 +1,7 @@
 ---
 title: Epiphany
 description: This post involves House diagnosing a patiet
-date: 2025-12-17
+date: 2024-08-24
 tags: everybody lies
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Global Mouse Bites
 description: This post reviews the Global Mouse Bites meme.
-date: 2025-12-17
+date: 2025-01-15
 tags: Needs more mouse bites
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Chicken & Tin Foil Hats?
 description: This post reviews the House & Wilson chicken meme
-date: 2025-12-17
+date: 2023-07-25
 tags: chaos
 ---
 <img src="./Gemini_House_Chicken.png" alt="House and Wilson Chicken Meme">
