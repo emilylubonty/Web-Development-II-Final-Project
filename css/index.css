@@ -396,6 +396,7 @@ header {
 	padding: 2rem;
 	background: color-mix(in srgb, var(--accent-blue) 5%, transparent);
 	border-radius: 8px;
+	border: 2px solid var(--accent-blue-dark);
 }
 
 .featured-post h2 {
