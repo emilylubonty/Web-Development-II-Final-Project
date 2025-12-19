@@ -410,6 +410,13 @@ header {
 	color: var(--accent-blue);
 }
 
+.about-me p{
+	text-align: center;
+	margin: 1px;
+	padding: 1rem;
+}
+
+
 /* Suggestion Box */
 .suggestion-box {
 	margin: 2rem 0;
