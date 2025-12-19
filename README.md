@@ -67,10 +67,10 @@ Generates the static site in the output directory.
 - **Dark mode support** with House M.D.-inspired clinical blue theme
 - **Colorblind-safe color palette** (blues, teals, warm accents)
 - **Featured post** callout on the homepage
-- **Suggestion box** with styled form inputs/textarea/button
+- **Contact box** with styled form inputs/textarea/button
 - **Accessible navigation** with proper semantic HTML
 - **Tag-based post organization** for easy browsing
-- **Custom Cabin variable font** (served from `fonts/` via passthrough)
+- **Custom variable font** (served from `fonts/` via passthrough)
 - **WCAG AA compliant** contrast ratios for accessibility
 
 ## Homepage sections
