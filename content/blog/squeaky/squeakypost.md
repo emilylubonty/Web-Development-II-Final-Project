@@ -2,10 +2,11 @@
 title: Dr. Squeaky
 description: This post involves Dr. Squeaky
 date: 2025-12-17
-tags: Needs more mouse bites
+tags:
+  - Needs more mouse bites
 ---
 
-<img src="./gemini_mouse_bites.png" alt="Dr.House surrounded by cartoon mice named Dr. Squeaky">
+<img src="./Gemini_Mouse_Bites.png" alt="Dr.House surrounded by cartoon mice named Dr. Squeaky">
 
 ## Ranking & Review
 

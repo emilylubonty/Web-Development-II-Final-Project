@@ -2,7 +2,8 @@
 title: Global Mouse Bites
 description: This post reviews the Global Mouse Bites meme.
 date: 2025-01-15
-tags: Needs more mouse bites
+tags:
+  - Needs more mouse bites
 ---
 
 <img src="./Gemini_Global_Mouse.png" alt="Four panel meme depicting House giving mouse bites to patient as a cure.">
