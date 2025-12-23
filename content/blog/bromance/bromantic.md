@@ -2,7 +2,8 @@
 title: How Bromantic
 description: This post involves House and Wilson sharing a platonic bromance
 date: 2023-10-12
-tags: aww
+tags:
+  - aww
 featured: true
 ---
 

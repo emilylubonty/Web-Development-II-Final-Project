@@ -79,11 +79,11 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "House M.D. Memes",
+			subtitle: "A blog dedicated to AI generated memes based on the TV show House M.D.",
+			base: "https://housemdmemes.com/",
 			author: {
-				name: "Your Name"
+				name: "Emily Lubonty"
 			}
 		}
 	});

@@ -1,8 +1,9 @@
 ---
 title: Epiphany
-description: This post involves House diagnosing a patiet
+description: This post involves House diagnosing a patient
 date: 2024-08-24
-tags: everybody lies
+tags:
+  - everybody lies
 ---
 
 <img src="./Gemini_House_Liver.png" alt="Dr.House and his team diagnosing a patient">
